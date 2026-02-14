@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhibin Wu - Academic Homepage</title>
+    <style>
+        /* 页面整体风格设置 - 极简白底 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        
+        /* 侧边栏与主要内容布局 */
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+        
+        /* 左侧头像和联系方式 */
+        .sidebar {
+            flex: 0 0 250px; /* 固定宽度 */
+            text-align: center;
+        }
+        
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* 圆形头像 */
+            object-fit: cover;
+            border: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .contact-info a {
+            display: block;
+            color: #0066cc;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        /* 右侧主要内容 */
+        .main-content {
+            flex: 1;
+        }
+
+        h3 {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            color: #222;
+        }
+
+        /* 论文列表样式 */
+        .publication-item {
+            margin-bottom: 20px;
+        }
+        .paper-title {
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+        .authors {
+            color: #555;
+        }
+        .venue {
+            font-style: italic;
+            color: #d9534f; /* 红色突出期刊/会议名 */
+        }
+        
+        /* 手机端适配 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="https://github.com/identicons/zhibinwu-SDU.png" alt="Zhibin Wu" class="profile-photo">
+            
+            <h2>Wu Zhibin (吴志斌)</h2>
+            <p>Master Student</p>
+            <p>Shandong University</p>
+            
+            <div class="contact-info">
+                <a href="mailto:your-email@sdu.edu.cn">📧 Email Me</a>
+                <a href="#">🎓 Google Scholar</a>
+                <a href="https://github.com/zhibinwu-SDU">🐙 GitHub</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="bio">
+                <h3>Bio (个人简介)</h3>
+                <p>
+                    I am currently a second-year graduate student at the 
+                    <strong>School of Software, Shandong University</strong>. 
+                    My research interests include <strong>Artificial Intelligence</strong> and <strong>Multimodal Learning</strong>.
+                </p>
+            </section>
+
+            <section id="news">
+                <h3>News</h3>
+                <ul>
+                    <li><strong>[2026.02]</strong> Created my personal academic website!</li>
+                    <li><strong>[2026.01]</strong> Submitted a paper to ICML 2026.</li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h3>Publications</h3>
+                
+                <div class="publication-item">
+                    <div class="paper-title">GenMSA: Generative Semantic Reconstruction with LLMs for Incomplete Multimodal Sentiment Analysis</div>
+                    <div class="authors">
+                        <strong>Zhibin Wu</strong>, Author Two, Author Three...
+                    </div>
+                    <div class="venue">
+                        Submitted to ICML 2026 / Under Review
+                    </div>
+                    <div>
+                        <a href="#">[PDF]</a> <a href="#">[Code]</a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
