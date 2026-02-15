@@ -68,23 +68,36 @@
 
         /* 论文列表样式 */
         .publication-item {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .paper-title {
             font-weight: bold;
             font-size: 1.05em;
+            color: #000;
         }
         .authors {
             color: #555;
             margin: 5px 0;
+            font-size: 0.95em;
         }
         .venue {
             font-style: italic;
             color: #d9534f; /* 红色突出期刊/会议名 */
+            font-weight: 500;
+        }
+        .links a {
+            text-decoration: none;
+            color: #0066cc;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .links a:hover {
+            text-decoration: underline;
         }
         .note {
             font-size: 0.9em;
             color: #777;
+            margin-bottom: 15px;
         }
         
         /* 手机端适配 */
@@ -111,7 +124,6 @@
             
             <div class="contact-info">
                 <a href="mailto:zhibinwu@sdu.edu.cn">📧 Email Me</a>
-                <a href="#">🎓 Google Scholar</a>
                 <a href="https://github.com/zhibinwu-SDU">🐙 GitHub</a>
             </div>
         </aside>
@@ -121,7 +133,7 @@
                 <h3>Bio (个人简介)</h3>
                 <p>
                     I am currently a second-year Professional Master's student majoring in <strong>Artificial Intelligence</strong> at the 
-                    <strong>School of Software, Shandong University</strong>. 
+                    <strong>School of Software, Shandong University</strong>.
                 </p>
                 <p>
                     My research interests include:
@@ -139,7 +151,9 @@
                     <li><strong>[2026.02]</strong> One paper submitted to <strong>CVPR 2026</strong>.</li>
                     <li><strong>[2026.02]</strong> One paper submitted to <strong>TCSVT</strong>.</li>
                     <li><strong>[2026.01]</strong> One paper submitted to <strong>ICML 2026</strong>.</li>
-                    <li><strong>[2025.11]</strong> One paper accepted by <strong>Knowledge-Based Systems (KBS)</strong>!</li>
+                    <li><strong>[2026.01]</strong> One paper accepted by <strong>ICLR 2026</strong>!</li>
+                    <li><strong>[2025.12]</strong> One paper accepted by <strong>NeurIPS 2025</strong>!</li>
+                    <li><strong>[2025.xx]</strong> One paper accepted by <strong>Knowledge-Based Systems (KBS)</strong>!</li>
                 </ul>
             </section>
 
@@ -155,8 +169,34 @@
                     <div class="venue">
                         Knowledge-Based Systems (KBS), 2025
                     </div>
-                    <div>
+                    <div class="links">
                         <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705125021264" target="_blank">[Paper]</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="paper-title">VT-FSL: Bridging Vision and Text with LLMs for Few-Shot Learning</div>
+                    <div class="authors">
+                        Wenhao Li, Qiangchang Wang, Xianjing Meng, <strong>Zhibin Wu</strong>, Yilong Yin
+                    </div>
+                    <div class="venue">
+                        NeurIPS 2025 (Poster)
+                    </div>
+                    <div class="links">
+                        <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/117710" target="_blank">[Paper]</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="paper-title">DVLA-RL: Dual-Level Vision–Language Alignment with Reinforcement Learning Gating for Few-Shot Learning</div>
+                    <div class="authors">
+                        Wenhao Li, Xianjing Meng, Qiangchang Wang, Zhongyi Han, <strong>Zhibin Wu</strong>, Yilong Yin
+                    </div>
+                    <div class="venue">
+                        ICLR 2026
+                    </div>
+                    <div class="links">
+                        <a href="https://arxiv.org/abs/2602.00795" target="_blank">[Paper]</a>
                     </div>
                 </div>
 
