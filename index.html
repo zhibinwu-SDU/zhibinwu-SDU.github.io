@@ -61,6 +61,11 @@
             color: #222;
         }
 
+        /* 列表样式 */
+        ul {
+            padding-left: 20px;
+        }
+
         /* 论文列表样式 */
         .publication-item {
             margin-bottom: 20px;
@@ -71,10 +76,15 @@
         }
         .authors {
             color: #555;
+            margin: 5px 0;
         }
         .venue {
             font-style: italic;
             color: #d9534f; /* 红色突出期刊/会议名 */
+        }
+        .note {
+            font-size: 0.9em;
+            color: #777;
         }
         
         /* 手机端适配 */
@@ -100,7 +110,7 @@
             <p>Shandong University</p>
             
             <div class="contact-info">
-                <a href="mailto:your-email@sdu.edu.cn">📧 Email Me</a>
+                <a href="mailto:zhibinwu@sdu.edu.cn">📧 Email Me</a>
                 <a href="#">🎓 Google Scholar</a>
                 <a href="https://github.com/zhibinwu-SDU">🐙 GitHub</a>
             </div>
@@ -110,33 +120,43 @@
             <section id="bio">
                 <h3>Bio (个人简介)</h3>
                 <p>
-                    I am currently a second-year graduate student at the 
+                    I am currently a second-year Professional Master's student majoring in <strong>Artificial Intelligence</strong> at the 
                     <strong>School of Software, Shandong University</strong>. 
-                    My research interests include <strong>Artificial Intelligence</strong> and <strong>Multimodal Learning</strong>.
                 </p>
+                <p>
+                    My research interests include:
+                </p>
+                <ul>
+                    <li><strong>Multimodal Sentiment Analysis</strong> (多模态情感分析)</li>
+                    <li><strong>Large Language Models</strong> (大模型)</li>
+                    <li><strong>Few-Shot Learning</strong> (小样本学习)</li>
+                </ul>
             </section>
 
             <section id="news">
                 <h3>News</h3>
                 <ul>
-                    <li><strong>[2026.02]</strong> Created my personal academic website!</li>
-                    <li><strong>[2026.01]</strong> Submitted a paper to ICML 2026.</li>
+                    <li><strong>[2026.02]</strong> One paper submitted to <strong>CVPR 2026</strong>.</li>
+                    <li><strong>[2026.02]</strong> One paper submitted to <strong>TCSVT</strong>.</li>
+                    <li><strong>[2026.01]</strong> One paper submitted to <strong>ICML 2026</strong>.</li>
+                    <li><strong>[2025.xx]</strong> One paper accepted by <strong>Knowledge-Based Systems (KBS)</strong>!</li>
                 </ul>
             </section>
 
             <section id="publications">
-                <h3>Publications</h3>
+                <h3>Selected Publications</h3>
+                <p class="note">* indicates equal contribution.</p>
                 
                 <div class="publication-item">
-                    <div class="paper-title">GenMSA: Generative Semantic Reconstruction with LLMs for Incomplete Multimodal Sentiment Analysis</div>
+                    <div class="paper-title">Progressive intra- and inter-modality relation learning for multimodal sentiment analysis</div>
                     <div class="authors">
-                        <strong>Zhibin Wu</strong>, Author Two, Author Three...
+                        Jing Li*, <strong>Zhibin Wu*</strong> (Co-first Author), Qiangchang Wang
                     </div>
                     <div class="venue">
-                        Submitted to ICML 2026 / Under Review
+                        Knowledge-Based Systems (KBS), 2025
                     </div>
                     <div>
-                        <a href="#">[PDF]</a> <a href="#">[Code]</a>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705125021264" target="_blank">[Paper]</a>
                     </div>
                 </div>
 
